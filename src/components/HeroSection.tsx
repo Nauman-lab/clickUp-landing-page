@@ -76,33 +76,33 @@ export default function HeroSection() {
   return (
     <section>
       <div className="container mx-auto px-4">
-        <h1 className="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-center mt-6 md:mt-10 leading-tight sm:leading-normal md:leading-loose lg:leading-relaxed">
+        <h1 className="text-[32px] sm:text-[48px] md:text-[64px] font-[800] text-center mt-6 md:mt-10 leading-tight sm:leading-normal md:leading-loose lg:leading-relaxed">
           The everything app for work
         </h1>
       </div>
-      <div className="bg-custom-bg bg-cover bg-center h-auto w-full">
+      <div className="bg-custom-bg bg-cover bg-center h-auto w-full font-[500]">
         <p className="text-center text-[18px] sm:text-[20px] md:text-[22px] max-w-lg sm:max-w-xl md:max-w-2xl mx-auto mt-3">
           <strong>Now with Chat, powered by AI.</strong> One place for teams of
           all sizes to communicate and get work done.
         </p>
         <div className="mx-auto w-full flex justify-center mt-4 sm:mt-6">
-          <Button className="bg-custom-gradient text-white font-bold text-[23px] px-12 py-8 rounded-lg shadow-md flex items-center justify-center gap-2 hover:opacity-90 transition-opacity duration-300">
+          <Button className="bg-custom-gradient text-white font-[700] text-[16px] md:text-[23px] px-10 md:px-16 py-8 rounded-lg shadow-md flex items-center justify-center gap-2 hover:opacity-90 transition-opacity duration-300">
             Get Started. It’s FREE
             <ArrowRight className="h-5 w-5" />
           </Button>
         </div>
-        <h3 className="text-center text-[#8b91a7] font-semibold mt-3 sm:mt-4">
+        <h3 className="text-center text-[#8b91a7] font-[500] mt-2 sm:mt-3">
           Free Forever. No Credit Card.
         </h3>
 
         {/* Slider Tabs */}
-        <div className="flex overflow-x-auto justify-center gap-6 md:gap-12 lg:gap-16 mt-6 md:mt-12">
+        <div className="flex overflow-x-auto justify-center gap-6 md:gap-12 lg:gap-16 mt-4 md:mt-10">
           {tabItems.map((item) => (
             <div
               key={item.id}
               className={`flex flex-col items-center cursor-pointer transition-all duration-300 ${
                 activeTab === item.id ? "opacity-100" : "opacity-50"
-              }`}
+              } hover:-translate-y-1 pt-2`}
               onClick={() => setActiveTab(item.id)}
             >
               <div

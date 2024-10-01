@@ -9,11 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        axiforma: ['Axiforma', 'sans-serif'],
+      },
       boxShadow: {
         custom: "0 4px 6px 0 rgba(67, 46, 134, 0.04)",
       },
       backgroundImage: {
         'custom-bg': "url('/images/bg-blurr.svg')", 
+        'ai-for-all-bg': "url('/images/ai-bg-asset.png')", 
         'custom-gradient': 'linear-gradient(56deg, #45c4f9, #7d09ff 50.33%, #ff0be5)'
     },
       colors: {

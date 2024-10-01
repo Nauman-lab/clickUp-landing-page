@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav className="p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto px-1 md:px-40 flex justify-between md:justify-around items-center">
         {/* Left Side - Logo */}
         <div className="flex gap-3">
           <div className="flex gap-3 items-center">

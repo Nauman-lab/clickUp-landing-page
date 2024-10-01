@@ -2,16 +2,44 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
+const axiforma = localFont({
+  src: [
+    {
+      path: './fonts/Axiforma-Black.woff',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Axiforma-ExtraBold.woff',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Axiforma-Bold.woff',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Axiforma-SemiBold.woff',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Axiforma-Medium.woff',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Axiforma-Regular.woff',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${axiforma.className} antialiased`}
       >
         <Navbar/>
         {children}
