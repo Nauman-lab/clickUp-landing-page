@@ -109,7 +109,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="#"
-              className="bg-gradient-to-r from-purple-500 to-blue-500 text-white py-2 px-4 rounded-[12px] hover:from-purple-600 hover:to-blue-600"
+              className="bg-custom-gradient text-white py-2 px-4 rounded-[12px] hover:from-purple-600 hover:to-blue-600"
             >
               Sign Up
             </Link>
